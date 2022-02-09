@@ -430,11 +430,11 @@ module.exports = {
                 }
             }
 
-            // try {
-            //     require('./lib/print')(m, this)
-            // } catch (e) {
-            //     console.log(m, m.quoted, e)
-            // }
+             try {
+                 require('./lib/print')(m, this)
+             } catch (e) {
+                 console.log(m, m.quoted, e)
+             }
             if (opts['autoread']) await this.chatRead(m.chat, m.isGroup ? m.sender : undefined, m.id || m.key.id).catch(() => { })
             let quequeIndex = this.msgqueque.indexOf(m.id || m.key.id)
             if (opts['queque'] && m.text && quequeIndex !== -1) this.msgqueque.splice(quequeIndex, 1)
