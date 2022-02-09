@@ -34,7 +34,7 @@ const defaultMenu = {
 │✾ Library: Baileys-MD
 │✾ Mode: ${global.opts['self'] ? 'Self' : 'publik'}
 │✾ Runtime: %uptime
-│✾ Author: Paquito1923
+│✾ Author: Elyas
 ╰❑
 
 %readmore`.trimStart(),
