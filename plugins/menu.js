@@ -29,15 +29,12 @@ let tags = {
 const defaultMenu = {
   before: `
 ╭────❑ *MENU* ❑────
-❑────❑ %me
+❑────❑ *Info %me*
 │✾ Version: %version
 │✾ Library: Baileys-MD
 │✾ Mode: ${global.opts['self'] ? 'Self' : 'publik'}
 │✾ Runtime: %uptime
 ╰❑
-╭────❑「 INFO 」❑────
-${informasibot}
-╰────
 
 %readmore`.trimStart(),
   header: '╭─「 %category 」',
